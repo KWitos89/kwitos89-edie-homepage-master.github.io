@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*fonts mobile*/
+.firstPage_title{
+    font-weight: 800;
+}
+h1{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+span{
+    color: var(--blue);
+}
+
+.content_qestion{
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    
+}
+
+p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: var(--colorp);
+}
+
+a{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+h3{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    color:var(--blue);
+}

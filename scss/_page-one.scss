@@ -1,0 +1,61 @@
+
+.firstPage{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.firstPage{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 10px;
+
+    margin-bottom: 48px;
+
+    .btnBurger{
+        position: relative;
+        right: 0;
+    }
+
+}
+
+
+.content_qestion{
+    margin-bottom: 5px;
+    margin-left: 40px;
+}
+
+.content_title{
+    margin-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 63px;
+}
+
+.title{
+    padding-right: 106px;
+}
+
+.content_boxImg{
+    margin-bottom: 22px;
+}
+
+p{
+    margin-bottom: 31px;
+    padding-left: 40px;
+    padding-right: 60px;
+    text-align: center;
+}
+
+h3{
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    padding-left: 40px;
+
+    .content_mail--btn{
+        transform: translateX(-30px);
+    }
+}
