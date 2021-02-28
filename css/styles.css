@@ -4,6 +4,7 @@
   padding: 30px;
   border: none;
   background: none;
+  z-index: 3;
 }
 
 @media screen and (min-width: 600px) {
@@ -32,10 +33,10 @@
   height: 3px;
   background: #333;
   border-radius: 12px;
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-  transition: -webkit-transform .3s ease-in-out;
-  transition: transform .3s ease-in-out;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .btnBurger_box--line::before, .btnBurger_box--line::after {
@@ -45,10 +46,10 @@
   height: 3px;
   background: var(--blue);
   border-radius: 12px;
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-  transition: -webkit-transform .3s ease-in-out;
-  transition: transform .3s ease-in-out;
-  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .btnBurger_box--line::before {
@@ -79,6 +80,12 @@
           transform: rotate(-90deg);
 }
 
+.bg {
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(70%, transparent), to(var(--blue)));
+  background: linear-gradient(to bottom left, transparent 70%, var(--blue));
+  height: 100vh;
+}
+
 .firstPage {
   padding-left: 17px;
   padding-right: 17px;
@@ -105,7 +112,7 @@
 
 .content_qestion {
   margin-bottom: 5px;
-  margin-left: 40px;
+  padding-left: 40px;
 }
 
 .content_title {
@@ -138,12 +145,18 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 40px;
 }
 
 form .content_mail--btn {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+  -webkit-transform: translateX(-26px);
+          transform: translateX(-26px);
 }
 
 .firstPage_menu--link {
@@ -153,13 +166,15 @@ form .content_mail--btn {
   height: 100%;
   width: 100%;
   list-style-type: none;
-  background: whitesmoke;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(60%, var(--colorbtn)), to(var(--blue)));
+  background: linear-gradient(to bottom left, var(--colorbtn) 60%, var(--blue));
   clip-path: polygon(0 0, 0 0, 50% 51%, 0 100%, 0 100%, 50% 51%, 100% 100%, 100% 100%, 50% 51%, 100% 0, 100% 0, 50% 51%);
   -webkit-clip-path: polygon(0 0, 0 0, 50% 51%, 0 100%, 0 100%, 50% 51%, 100% 100%, 100% 100%, 50% 51%, 100% 0, 100% 0, 50% 51%);
-  -webkit-transition: -webkit-clip-path .3s ease-in-out;
-  transition: -webkit-clip-path .3s ease-in-out;
-  transition: clip-path .3s ease-in-out;
-  transition: clip-path .3s ease-in-out, -webkit-clip-path .3s ease-in-out;
+  -webkit-transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: -webkit-clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out;
+  transition: clip-path 0.3s ease-in-out, -webkit-clip-path 0.3s ease-in-out;
+  z-index: 3;
 }
 
 .firstPage_menu--link {
@@ -271,11 +286,11 @@ h3 {
 }
 
 :root {
-  --blue:rgba(45, 156, 219, 1);
+  --blue: rgba(45, 156, 219, 1);
   --colorfont: rgba(51, 51, 51, 1);
-  --colorplaceho:rgba(130, 130, 130, 1);
+  --colorplaceho: rgba(130, 130, 130, 1);
   --colorbtn: rgba(242, 242, 242, 1);
-  --colorp:rgba(79, 79, 79, 1);
+  --colorp: rgba(79, 79, 79, 1);
 }
 
 .email--input {
@@ -287,13 +302,13 @@ h3 {
   height: 47px;
   border-radius: 25px;
   border: none;
-  background: radial-gradient(circle at right, transparent 30px, var(--colorbtn) 31px);
+  background: radial-gradient(circle at right, transparent 25px, var(--colorbtn) 31px);
   text-align: center;
 }
 
 .email--input:focus {
-  background: radial-gradient(circle at right, transparent 30px, var(--blue) 31px);
-  color: var(--colorbtn);
+  -webkit-box-shadow: inset 0 0 10px var(--blue);
+          box-shadow: inset 0 0 10px var(--blue);
 }
 
 .content_mail--btn {
@@ -302,9 +317,9 @@ h3 {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  border-radius: 25px;
-  -webkit-box-shadow: 3px 3px 5px var(--colorfont);
-          box-shadow: 3px 3px 5px var(--colorfont);
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   background: var(--blue);
   color: var(--colorbtn);
   font-size: 14px;
@@ -314,13 +329,22 @@ h3 {
   text-transform: uppercase;
 }
 
+.content_mail--btn:active {
+  -webkit-box-shadow: inset 3px 3px 2px var(--colorplaceho), inset -3px -3px 2px var(--colorbtn);
+          box-shadow: inset 3px 3px 2px var(--colorplaceho), inset -3px -3px 2px var(--colorbtn);
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
 /*reset*/
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--colorfont);
 }
 /*# sourceMappingURL=styles.css.map */

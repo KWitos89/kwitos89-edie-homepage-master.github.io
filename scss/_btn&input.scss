@@ -1,44 +1,48 @@
-.email--input{
-    position: relative;
-    appearance: none;
-    -webkit-appearance: none;
+.email--input {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
 
-   width: 220px;
-   height: 47px;
+  width: 220px;
+  height: 47px;
 
-    border-radius: 25px;
-    border: none;
-    background: radial-gradient(circle at right ,transparent 30px, var(--colorbtn) 31px);
+  border-radius: 25px;
+  border: none;
+  background: radial-gradient(
+    circle at right,
+    transparent 25px,
+    var(--colorbtn) 31px
+  );
+  text-align: center;
 
-    text-align: center;
-
-    &:focus{
-        background: radial-gradient(circle at right,transparent 30px,var(--blue) 31px);
-        color: var(--colorbtn);
-    }
-
+  &:focus {
+    box-shadow: inset 0 0 10px var(--blue);
+  }
 }
 
-.content_mail--btn{
-    padding: 14px 40px;
+.content_mail--btn {
+  padding: 14px 40px;
 
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+
+  border-radius: 30px;
+  box-shadow: none;
+
+  background: var(--blue);
+
+  color: var(--colorbtn);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:active {
+    box-shadow: inset 3px 3px 2px var(--colorplaceho),
+      inset -3px -3px 2px var(--colorbtn);
     border: none;
     appearance: none;
-    -webkit-appearance: none;
-
-    border-radius: 25px;
-    box-shadow: 3px 3px 5px var(--colorfont);
-
-    background:var(--blue);
-
-    color: var(--colorbtn);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  }
 }
-
-
-
-

@@ -1,6 +1,6 @@
 /*import styles*/
 @import "burger";
-@import "page-one";
+@import "page-styles";
 @import "menu--link";
 @import "styles-img";
 @import "fonts";
@@ -8,10 +8,10 @@
 @import "btn&input";
 
 /*reset*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-    color: var(--colorfont);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--colorfont);
 }
