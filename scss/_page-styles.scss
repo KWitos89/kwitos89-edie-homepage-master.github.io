@@ -57,9 +57,27 @@ form {
   justify-content: center;
   align-items: center;
 
-  padding-left: 40px;
+  margin-left: 40px;
 
-  .content_mail--btn {
-    transform: translateX(-26px);
-  }
+  
 }
+.bg2{
+  background: linear-gradient(to bottom right,var(--blue),transparent 30%);
+  height: 100vh;
+}
+.secendPage{
+  padding-top: 102px;
+  padding-left: 15px;
+  padding-right: 19px;
+}
+
+.secendPage_title{
+  margin-bottom: 50px;
+  padding-left:34px;
+  padding-right: 50px;
+}
+
+.secendPage_card{
+  margin-bottom: 80px;
+}
+
