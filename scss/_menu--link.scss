@@ -3,8 +3,10 @@
   top: 0;
   left: 0;
 
-  height: 100%;
+  height: 100vh;
   width: 100%;
+
+  overflow: hidden;
 
   list-style-type: none;
   background: linear-gradient(to bottom left, var(--colorbtn) 60%, var(--blue));

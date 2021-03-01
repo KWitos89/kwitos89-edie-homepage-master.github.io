@@ -1,6 +1,15 @@
 /*import styles*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 .btnBurger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   padding: 30px;
   border: none;
@@ -163,9 +172,20 @@ form {
 }
 
 .secendPage {
-  padding-top: 102px;
-  padding-left: 15px;
-  padding-right: 19px;
+  padding-top: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .secendPage_title {
@@ -178,12 +198,17 @@ form {
   margin-bottom: 80px;
 }
 
+.threePage_title {
+  padding-left: 20px;
+}
+
 .firstPage_menu--link {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
   list-style-type: none;
   background: -webkit-gradient(linear, right top, left bottom, color-stop(60%, var(--colorbtn)), to(var(--blue)));
   background: linear-gradient(to bottom left, var(--colorbtn) 60%, var(--blue));
@@ -262,6 +287,18 @@ form {
      object-fit: cover;
 }
 
+.threePage_card--boxImg {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.threePage_card--boxImg img {
+  width: 100%;
+  border-radius: 24px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /*fonts mobile*/
 .firstPage_title {
   font-weight: 800;
@@ -301,6 +338,19 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
+  color: var(--blue);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.threePage_see--link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
   color: var(--blue);
 }
 

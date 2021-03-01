@@ -58,26 +58,33 @@ form {
   align-items: center;
 
   margin-left: 40px;
-
-  
 }
-.bg2{
-  background: linear-gradient(to bottom right,var(--blue),transparent 30%);
+.bg2 {
+  background: linear-gradient(to bottom right, var(--blue), transparent 30%);
   height: 100vh;
 }
-.secendPage{
-  padding-top: 102px;
-  padding-left: 15px;
-  padding-right: 19px;
+.secendPage {
+  padding-top: 70px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.secendPage_title{
+.secendPage_title {
   margin-bottom: 50px;
-  padding-left:34px;
+  padding-left: 34px;
   padding-right: 50px;
 }
 
-.secendPage_card{
+.secendPage_card {
   margin-bottom: 80px;
+
+}
+
+
+.threePage_title{
+  padding-left: 20px;
 }
 
