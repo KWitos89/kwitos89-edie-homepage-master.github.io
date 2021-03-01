@@ -165,12 +165,6 @@ form {
   margin-left: 40px;
 }
 
-.bg2 {
-  background: -webkit-gradient(linear, left top, right bottom, from(var(--blue)), color-stop(30%, transparent));
-  background: linear-gradient(to bottom right, var(--blue), transparent 30%);
-  height: 100vh;
-}
-
 .secendPage {
   padding-top: 70px;
   display: -webkit-box;
@@ -196,10 +190,6 @@ form {
 
 .secendPage_card {
   margin-bottom: 80px;
-}
-
-.threePage_title {
-  padding-left: 20px;
 }
 
 .firstPage_menu--link {
@@ -425,7 +415,6 @@ form {
 }
 
 .secendPage_card {
-  position: relative;
   width: 341px;
   height: 422px;
   -webkit-box-shadow: 0px 5px 10px 0px var(--colorfont);
@@ -575,7 +564,6 @@ form {
 }
 
 .secendPage_card--btn {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
