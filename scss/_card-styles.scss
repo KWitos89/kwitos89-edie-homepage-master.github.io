@@ -1,5 +1,5 @@
 .secendPage_card {
-
+  position: relative;
   width: 341px;
   height: 422px;
 
@@ -157,5 +157,6 @@
 
   &:active {
     box-shadow: none;
+   
   }
 }

@@ -78,6 +78,16 @@
   );
 }
 
+.footer_menu--link{
+
+  list-style-type: none;
+
+  a{
+    color: var(--colorbtn);
+    text-decoration: none;
+  }
+}
+
 @media screen and (min-width: 600px) {
   .firstPage_menu--link {
     position: relative;

@@ -1,8 +1,8 @@
-form{
+form {
   width: 291px;
   height: 47px;
 
-  background:var(--colorbtn);
+  background: var(--colorbtn);
   border-radius: 12px;
 
   display: flex;
@@ -25,15 +25,13 @@ form{
   font-weight: 500;
   line-height: 21px;
 
-  &:focus{
+  &:focus {
     box-shadow: inset 0 0 15px var(--blue);
   }
 }
 
-
-
-.content_mail--btn {
- 
+.content_mail--btn,
+.footer_mail--btn {
   padding: 10px 15px;
   margin-top: 4px;
   margin-right: 4px;
@@ -55,7 +53,7 @@ form{
   letter-spacing: 2px;
   text-transform: uppercase;
 
-  &:active{
+  &:active {
     box-shadow: none;
   }
 }

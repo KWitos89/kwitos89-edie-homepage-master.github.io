@@ -44,11 +44,38 @@ h2 {
   font-weight: 500;
   line-height: 27px;
 }
-
-.threePage_see--link {
+.fourPage_meet {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #f00;
+}
+.threePage_see--link,
+.fourPage_boss--position {
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
 
   color: var(--blue);
+}
+.fourPage_quotation {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.footer_menu {
+  a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+.footer_social--title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 53px;
+
+  color: var(--colorbtn);
 }

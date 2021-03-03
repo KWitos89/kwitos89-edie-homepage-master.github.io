@@ -1,7 +1,3 @@
-.bg {
-  background: linear-gradient(to bottom left, transparent 70%, var(--blue));
-  height: 100vh;
-}
 .firstPage {
   padding-left: 17px;
   padding-right: 17px;
@@ -58,8 +54,9 @@ form {
 
   margin-left: 40px;
 }
+
 .secendPage {
-  padding-top: 70px;
+  padding-top: 100px;
 
   display: flex;
   flex-direction: column;
@@ -75,4 +72,120 @@ form {
 
 .secendPage_card {
   margin-bottom: 80px;
+}
+
+.threePage {
+  padding-top: 100px;
+}
+.threePage_title {
+  padding-left: 45px;
+  padding-right: 63px;
+  margin-bottom: 48px;
+}
+.threePage_card {
+  margin-bottom: 36px;
+}
+
+.threePage_card--paragraph {
+  padding-left: 17px;
+}
+h2 {
+  padding-left: 17px;
+}
+.threePage_see {
+  padding-left: 17px;
+  margin-top: 36.6px;
+}
+
+.fourPage {
+  margin-top: 100px;
+}
+
+.fourPage_title {
+  padding-left: 17px;
+  padding-right: 150px;
+}
+.fourPage_paragaph {
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  padding-left: 17px;
+  padding-right: 120px;
+
+  text-align: left;
+}
+
+.fourPage_grid {
+  margin-top: 36px;
+}
+
+.fourPage_quotation {
+  text-align: left;
+  padding-left: 17px;
+  padding-right: 40px;
+}
+
+.fourPage_boss {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto max-content;
+
+  padding-left: 17px;
+
+  .fourPage_boss--name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    margin-left: 30px;
+  }
+
+  .fourPage_boss--position {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    white-space: nowrap;
+
+    transform: translateY(-30px);
+    margin-left: 30px;
+    padding: 0;
+  }
+}
+
+footer {
+  background: rgba(16, 14, 29, 1);
+  height: 100vh;
+
+  margin-top: 100px;
+}
+
+.footer_menu--link {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.footer_social {
+  margin-top: 65px;
+  padding-left: 40px;
+
+  .footer_social--title {
+    margin-bottom: 10px;
+  }
+
+  .footer_social--boxImg {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.footer_mail--title {
+  margin-top: 65px;
+}
+
+.footer_foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 90px;
 }
