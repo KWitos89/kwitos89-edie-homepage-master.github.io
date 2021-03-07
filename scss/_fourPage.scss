@@ -1,0 +1,53 @@
+
+.fourPage_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  justify-content: space-around;
+}
+
+.grid_boxImg--1{
+  grid-column: 1/2;
+  grid-row: 1/3;
+
+  justify-self: flex-end;
+  align-self: center;
+
+  padding-right: 0;
+
+}
+.grid_boxImg--2{
+  justify-self: flex-start;
+  align-self: flex-end;
+}
+
+.grid_boxImg--3{
+  justify-self: flex-start;
+  align-self: flex-start;
+  grid-column: 2/3;
+}
+
+
+
+
+
+@media screen and (min-width:700px){
+  .fourPage{
+    margin-top: 0;
+    padding-top: 50px;
+  }
+  .flex{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+  }
+
+
+}
+
+
+
+

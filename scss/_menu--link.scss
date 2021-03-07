@@ -88,20 +88,40 @@
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
+
   .firstPage_menu--link {
     position: relative;
-    background: none;
-    height: auto;
-    width: auto;
     clip-path: none;
+    height: auto;
+    width: 80vw;
+    background: transparent;
 
-    & {
-      padding: 0;
-
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      column-gap: 15px;
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-end;
+    justify-content: space-between;
+    
+    a:hover{
+      font-weight: bold;
     }
+  }
+}
+
+@media screen and(min-width:800px){
+
+  .firstPage_menu--link{
+
+    justify-content: flex-end;
+    
+    li{
+      margin-left: 2rem;
+      position: relative;
+
+      a:hover{
+        font-weight: bold;
+      }
+    }
+
   }
 }

@@ -8,7 +8,6 @@
 
   padding-top: 49px;
   padding-left: 34px;
-
 }
 
 .secendPage_card--icon {
@@ -157,6 +156,14 @@
 
   &:active {
     box-shadow: none;
-   
+  }
+}
+@media screen and (min-width: 800px) {
+  .secendPage_flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    column-gap: 50px;
   }
 }

@@ -1,48 +1,108 @@
-.threePage_card{
-    
+.threePage_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+  p {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.threePage_see {
+  display: flex;
+  align-items: center;
+}
+.threePage_see--link {
+  text-decoration: none;
+
+  margin-right: 20px;
+}
+
+.threePage_see--arrow {
+  position: relative;
+
+  width: 30px;
+  height: 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+
+  background: var(--blue);
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -5px;
+    bottom: -5.4px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 8px solid var(--blue);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .threePage_flex {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: left;
 
-    p{
-        text-align: left;
-        margin-bottom: 0;
-    }
-  
-}
-.threePage_see{
+    margin: 0;
+    padding: 0;
+  }
+
+  .threePage_card {
+    max-width: 350px;
+  }
+
+  .card_1,
+  .card_2 {
+    transform: translateY(-100px);
+  }
+
+  .threePage_see {
     display: flex;
-    align-items: center;
-}
-.threePage_see--link{
-    text-decoration: none;
+    justify-content: flex-end;
 
-    margin-right: 20px;
-}
-
-.threePage_see--arrow{
-    position: relative;
-
-    width: 30px;
-    height: 5px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-
-    background: var(--blue);
-
-    &::after{
-        content: '';
-        position: absolute;
-        right: -5px;
-        bottom: -5.4px;
-
-        width: 0;
-        height: 0;
-
-          border-left: 8px solid var(--blue);
-          border-top: 8px solid transparent;
-          border-bottom: 8px solid transparent; 
-    }
+    transform: translateY(-100px);
+    margin-right: 30px;
+  }
 }
 
+@media screen and (min-width: 920px) {
+  .threePage_card {
+    min-width: 450px;
+  }
+
+  .threePage_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .threePage_card {
+    min-width: 580px;
+  }
+
+  .threePage_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card_1,
+  .card_2 {
+    transform: translateY(-150px);
+  }
+}
